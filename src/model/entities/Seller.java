@@ -14,6 +14,8 @@ public class Seller implements Serializable {
 	private Date birthDate;
 	private Double baseSalary;
 
+	private Department department;
+	
 	public Seller() {
 	}
 
@@ -86,5 +88,13 @@ public class Seller implements Serializable {
 	public String toString() {
 		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate + ", baseSalary="
 				+ baseSalary + "]";
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
 	}
 }
